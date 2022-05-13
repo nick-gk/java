@@ -1,0 +1,43 @@
+1. Citire date din fisierele profesori.txt si programari.txt in colectii
+corespunzatoare:
+Map<Integer, Profesor> profesori;
+List<Programare> programari;
+
+2. Prelucrari
+2.1 Afișare lista cursuri în ordine alfabetică
+2.2 Afișare număr de activități pentru fiecare profesor
+2.3 Lista departamentelor ordonate descrescator dupa numărul de activități
+    Utila clasa Departament cu atributele: (String) denumire, (long) numarActivitati.
+
+3. In clasa Orar, scrieți o funcție de forma:
+
+static void afisareOrarGrupa(
+	String grupa,
+        List<Programare> programari,
+	Map<String, List<String>> componentaSerii)
+
+pentru afișarea orarului unei grupe primită ca parametru in formatul urmator:
+
+Ziua       Interval orar        Disciplina                                         Sala       Curs/Seminar
+Luni       Ora900               SGBD Oracle                                        1102       Curs
+           Ora730               Programare multiparadigmă - Java                   2201       Curs
+           Ora1200              SGBD Oracle                                        2017       Seminar
+           Ora1030              Programare evolutivă și algoritmi genetici         2319       Seminar
+Marți      Ora900               Programarea aplicațiilor Windows                   2104       Curs
+           Ora1330              Programare evolutivă și algoritmi genetici         2204       Curs
+           Ora1200              Programarea aplicațiilor Windows                   2212       Seminar
+           Ora1030              Structuri de date                                  2016       Seminar
+Joi        Ora1200              Structuri de date                                  2103       Curs
+           Ora1330              Macroeconomie cantitativă                          2211       Seminar
+           Ora1500              Macroeconomie cantitativă                          1309       Curs
+Vineri     Ora900               Programare multiparadigmă - Java                   2305       Seminar
+
+Componența seriilor este primită ca parametru sub formă de dicționar construit în programul principal cu următoarele valori:
+C: 1045,1046,1047,1048,1049
+D: 1050,1051,1052,1053,1054
+E: 1055,1056,1057,1058
+
+Se cere:
+
+definiția funcției
+apelul funcției (și construirea dicționarului componentaSerii)
